@@ -28,6 +28,23 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .button {
     font: inherit;
 
@@ -46,13 +63,48 @@ a {
     background-color: #663d15;
 }
 
+.main-header {
+    margin-bottom: 75px;
+
+/*    Временно для сетки*/
+    min-height: 285px;
+}
+
+.main-header-logo {
+    order: 2;
+    width: 368px;
+    height: 153px;
+
+/*    Временно для сетки */
+/*    display: block;*/
+}
+
+.main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+
+    background-color: #000;
+
+/*    временно для сетки*/
+    min-height: 70px;
+    background-color: transparent;
+}
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
 
     background-color: #000;
 }
+
 
 .site-navigation,
 .user-navigation {
@@ -70,12 +122,50 @@ a {
     background-color: #242424;
 }
 
-.features-list {
+.site-navigation {
+    width: 620px;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
+
+    /*    Временно для сетки */
+    min-height: 70px;
+}
+
+.user-navigation {
+    width: 140px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+        /*    Временно для сетки */
+    min-height: 70px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+        list-style: none;
+
+/*    временно для сетки */
+    min-height: 170px;
 }
 
 .feature-item {
- text-align: center;
+    text-align: center;
+    width: 300px;
+
+    /*    временно для сетки */
+    min-height: 170px;
 }
 .feature-item h3 {
     font-size: 30px;
@@ -83,6 +173,10 @@ a {
 }
 
 .index-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
     color: #000;
 
     background-color: #f8f5f2;
@@ -96,6 +190,12 @@ a {
     line-height: 42px;
 }
 
+.news {
+    width: 380px;
+    /*    временно для сетки */
+    min-height: 315px;
+}
+
 .news-list {
     list-style: none;
 }
@@ -104,9 +204,27 @@ a {
     text-transform: none;
 }
 
+.gallery {
+    width: 300px;
+    /*    временно для сетки */
+    min-height: 315px;
+}
+
 .gallery-content {
     background-color: #ccc;
     border: 7px solid #fff;
+}
+
+.contacts {
+    width: 380px;
+    /*    временно для сетки */
+    min-height: 295px;
+}
+.appointment {
+    width: 300px;
+
+    /*    временно для сетки */
+    min-height: 340px;
 }
 
 .appointment-item input {
@@ -282,12 +400,31 @@ a {
 }
 
 .main-footer {
+    padding: 60px 0;
+    margin-top: 65px;
+
+    /*    временно для сетки */
+    background: none;
+    min-height: 180px;
     color:  #fff;
 
     background-color: #212121;
     background-image: url(../img/pattern-dark.jpg);
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-contacts{
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
+
+    /*    временно для сетки */
+    min-height: 100px;
 }
 
 .footer-contacts a {
@@ -301,6 +438,9 @@ a {
 }
 
 .footer-social {
+    width: 145px;
+    /*    временно для сетки */
+    min-height: 100px;
     text-align: center;
 }
 
@@ -313,6 +453,12 @@ a {
 }
 
 .footer-copyright {
+        width: 150px;
+    margin: 0;
+    margin-left: auto;
+
+    /*    временно для сетки */
+    min-height: 100px;
     text-align: center;
 }
 
@@ -376,166 +522,70 @@ body {
     min-height: 1750px;
 }
 
-.container {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
 
-.main-header {
-    margin-bottom: 75px;
 
-/*    Временно для сетки*/
-    min-height: 285px;
-}
 
+
+/*
 .main-navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-/*    Временно для сетки*/
+
+    Временно для сетки
     min-height: 285px;
 
     background-color: transparent;
 }
+*/
 
-.main-header-logo {
-    order: 2;
-    width: 368px;
-    height: 153px;
 
-/*    Временно для сетки */
-/*    display: block;*/
-}
 
-.main-navigation-wrapper {
-    width: 100%;
-    margin-bottom: 60px;
 
-    background-color: #000;
 
-/*    временно для сетки*/
-    min-height: 70px;
-    background-color: transparent;
-}
-.main-navigation-wrapper .container {
-    display: flex;
-    justify-content: space-between;
-}
 
-.site-navigation {
-    width: 620px;
-    margin: 0;
-    padding: 0;
 
-    list-style: none;
 
-    /*    Временно для сетки */
-    min-height: 70px;
-}
 
-.user-navigation {
-    width: 140px;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-
-        /*    Временно для сетки */
-    min-height: 70px;
-}
-
-.features {
-    margin-bottom: 80px;
-}
-
+/*
 .features-list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
 
-        list-style: none;
-
-/*    временно для сетки */
-    min-height: 170px;
 }
 
 .feature-item {
-    width: 300px;
 
-    /*    временно для сетки */
-    min-height: 170px;
 }
+*/
 
-.index-columns {
-    display: flex;
-    justify-content: space-between;
-    padding: 50xp 80px;
-    margin-bottom: 35px;
+/*.index-columns {*/
+
 
 /*    временно для сетки*/
-    background-image: none;
-    background-color: transparent;
-}
+/*    background-image: none;*/
+/*    background-color: transparent;*/
+/*}*/
 
-.news {
-    width: 380px;
-    /*    временно для сетки */
-    min-height: 315px;
-}
-.gallery {
-    width: 300px;
-    /*    временно для сетки */
-    min-height: 315px;
-}
 
-.contacts {
-    width: 380px;
-    /*    временно для сетки */
-    min-height: 295px;
-}
-.appointment {
-    width: 300px;
 
-    /*    временно для сетки */
-    min-height: 340px;
-}
 
+
+
+/*
 .main-footer {
-    padding: 60px 0;
-    margin-top: 65px;
 
-    /*    временно для сетки */
-    background: none;
-    min-height: 180px;
 }
+*/
 
-.main-footer .container {
-    display: flex;
-}
 
-.footer-contacts{
-    width: 320px;
-    margin: 0;
-    margin-right: 80px;
 
-    /*    временно для сетки */
-    min-height: 100px;
-}
+
+/*
 
 .footer-social {
-    width: 145px;
-    /*    временно для сетки */
-    min-height: 100px;
-}
 
+}
+*/
+
+/*
 .footer-copyright {
-    width: 150px;
-    margin: 0;
-    margin-left: auto;
 
-    /*    временно для сетки */
-    min-height: 100px;
 }
+*/
