@@ -67,7 +67,13 @@ a {
     margin-bottom: 75px;
 
 /*    Временно для сетки*/
-    min-height: 285px;
+/*    min-height: 285px;*/
+}
+
+.inner-page .main-header {
+    margin-bottom: 50px;
+
+    background-color: #000;
 }
 
 .main-header-logo {
@@ -105,6 +111,11 @@ a {
     background-color: #000;
 }
 
+.inner-page .main-navigation {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
 
 .site-navigation,
 .user-navigation {
@@ -298,12 +309,17 @@ a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .catalog-item:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .catalog-item a {
     color: #000;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .catalog-item h3 {
@@ -329,7 +345,13 @@ a {
 }
 
 .pagination-list {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
+
+/*    временно для сетки*/
+    min-height: 47px;
 }
 
 .pagination-item a {
@@ -379,6 +401,13 @@ a {
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1)
 }
 
+.product-photos {
+    width: 460px;
+
+/*    временно для сетки*/
+    min-height: 677px;
+}
+
 .product-article {
     text-align: right;
     color: #aeaeae;
@@ -388,6 +417,13 @@ a {
     text-align: center;
 
     background-color: #e5e5e5;
+}
+
+.product-info {
+    width: 390px;
+
+    /*    временно для сетки*/
+    min-height: 667px;
 }
 
 .product-info h3{
@@ -404,7 +440,7 @@ a {
     margin-top: 65px;
 
     /*    временно для сетки */
-    background: none;
+/*    background: none;*/
     min-height: 180px;
     color:  #fff;
 
@@ -519,21 +555,14 @@ a {
 html,
 body {
     min-width: 1122px;
-    min-height: 1750px;
+    min-height: 1150px;
 }
 
-
-
-
-
 /*
-.main-navigation {
-
-
-    Временно для сетки
-    min-height: 285px;
-
-    background-color: transparent;
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 */
 
@@ -545,47 +574,3 @@ body {
 
 
 
-/*
-.features-list {
-
-}
-
-.feature-item {
-
-}
-*/
-
-/*.index-columns {*/
-
-
-/*    временно для сетки*/
-/*    background-image: none;*/
-/*    background-color: transparent;*/
-/*}*/
-
-
-
-
-
-
-/*
-.main-footer {
-
-}
-*/
-
-
-
-
-/*
-
-.footer-social {
-
-}
-*/
-
-/*
-.footer-copyright {
-
-}
-*/
